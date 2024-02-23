@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temprature Converter</title>
+
+    <!-- font -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500&family=Jost:wght@100;200;300;400;500&family=Poppins:wght@100;200;300;400;500;600&family=Quicksand:wght@300;500&family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  
+    <!-- box icon -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Font osm -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="temprature-converter">
+        
+        <h2 class="title">Temprature Converter</h2>
+        <!-- SHOWING RESULT HEERE -->
+        <div class="result">
+           <span class="result-heading">Result (Celsius)</span>
+           <h2 class="celsius-value" id="celsius">1</h2>
+        </div>
+
+        <!-- INPUT FIELD -->
+        <div class="degree-type">
+            <!-- for degree -->
+            <div class="degree-field">
+                <label for="degree">Degree</label>
+                <input type="number" name="degree" id="degree">
+            </div>
+
+            <!-- for option selection -->
+            <div class="temp-field">
+                <label for="temp-type">Type</label>
+    <select name="tempratures" id="temp-type" autocomplete="on">
+        <option value="fahrenheit" id="fahrenheit">Fahranheit</option>
+   <option value="kelvin" id="kelvin">Kelvin</option>
+    </select>
+            </div>
+        </div>
+        <button id="convert-btn">Convert</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
